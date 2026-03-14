@@ -775,9 +775,66 @@ p:last-child {
   color: var(--cd-rarity-legendary-txt);
 }
 
-/* ============================================================= */
+  /* ============================================================= */
   /*
   /* Кастомки
   /*
   /* ============================================================= */
 
+  /* ============================================================= */
+  /* Windows 2000 Card Style                                       */
+  /* ============================================================= */
+
+.card {
+  background: #d4d0c8 !important;
+  border: 2px solid #808080 !important;
+  border-radius: 0 !important;
+  box-shadow:
+    inset -1px -1px 0 #ffffff,
+    inset 1px 1px 0 #404040;
+  padding: 0 !important;
+}
+
+/* Header — синяя полоска как в Windows 2000 */
+.card-header {
+  background: linear-gradient(to bottom, #3a6ea5, #000080) !important;
+  color: #ffffff !important;
+  font-family: "Tahoma", sans-serif !important;
+  font-weight: bold;
+  padding: 4px 8px !important;
+  border-bottom: 2px solid #404040 !important;
+  border-radius: 0 !important;
+}
+
+/* Тело карточки */
+.card-body {
+  background: #d4d0c8 !important;
+  padding: 10px !important;
+  font-family: "Tahoma", sans-serif !important;
+  color: #000 !important;
+}
+
+/* Footer — как нижняя панель окна */
+.card-footer {
+  background: #d4d0c8 !important;
+  border-top: 2px solid #808080 !important;
+  padding: 6px 8px !important;
+  font-family: "Tahoma", sans-serif !important;
+  border-radius: 0 !important;
+}
+
+/* Кнопки внутри карточки */
+.card .btn {
+  background: #d4d0c8 !important;
+  border: 2px solid #808080 !important;
+  color: #000 !important;
+  box-shadow:
+    inset -1px -1px 0 #ffffff,
+    inset 1px 1px 0 #404040;
+}
+
+.card .btn:active {
+  box-shadow:
+    inset 1px 1px 0 #ffffff,
+    inset -1px -1px 0 #404040;
+}
