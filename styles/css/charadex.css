@@ -774,3 +774,13 @@ p:last-child {
   background-color: var(--cd-rarity-legendary-bg);
   color: var(--cd-rarity-legendary-txt);
 }
+
+.lang-btn {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  font: inherit;      /* наследует шрифт, как обычный текст */
+  color: inherit;     /* наследует цвет */
+  cursor: pointer;    /* можно убрать, если хочешь совсем как текст */
+}
