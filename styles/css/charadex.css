@@ -780,7 +780,12 @@ p:last-child {
   border: none;
   padding: 0;
   margin: 0;
-  font: inherit;      /* наследует шрифт, как обычный текст */
-  color: inherit;     /* наследует цвет */
-  cursor: pointer;    /* можно убрать, если хочешь совсем как текст */
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
 }
+
+.dropdown-item.lang-btn {
+  padding-left: 20px;
+}
+
