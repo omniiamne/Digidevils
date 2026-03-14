@@ -795,3 +795,7 @@ p:last-child {
   padding-left: 20px;
 }
 
+.navbar-nav .nav-link {
+  display: flex;
+  align-items: center;
+}
