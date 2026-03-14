@@ -781,25 +781,4 @@ p:last-child {
   /*
   /* ============================================================= */
 
-.lang-btn {
-  background: none;
-  border: none;
-  padding: 0;
-  margin: 0;
-  font: inherit;
-  color: inherit;
-  cursor: pointer;
-}
 
-.dropdown-item.lang-btn {
-  padding-left: 20px;
-}
-
-.navbar-nav {
-  align-items: center;
-}
-
-.navbar-nav .nav-link {
-  display: flex;
-  align-items: center;
-}
