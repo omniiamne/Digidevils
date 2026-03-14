@@ -13,57 +13,79 @@ body {
   /* font swap, then you'll only need to edit the variables below.
   /*
   /* ============================================================= */
-  /* Primary Color
-  ================================================================ */
-  --cd-primary-color: #8FB7D4;
-  --cd-primary-text-color: #fff;
+  
+  
+ :root {
+  /* Windows 2000 Core Palette */
+  --cd-body-background-color: #c0c0c0;
+  --cd-content-background-color: #d4d0c8;
+  --cd-faded-background-color: #c0c0c0;
 
-  /* ============================================================= */
-  /* Secondary Color
-  ================================================================ */
-  --cd-secondary-color: #939799;
-  --cd-secondary-text-color: #fff;
+  --cd-body-text-color: #000000;
+  --cd-faded-text-color: #404040;
 
-  /* ============================================================= */
-  /* Backgrounds
-  ================================================================ */
-  --cd-body-background-color: #f8f8f8;
-  --cd-content-background-color: #ffffff;
-  --cd-faded-background-color: #f8f8f8;
-
-  /* Background Extras */
-  --cd-body-background-image: url(https://i.pinimg.com/1200x/25/aa/1a/25aa1a16b78d63f639b04b8427d4f2d6.jpg);
-
-  /* ============================================================= */
-  /* Text
-  ================================================================ */
-  --cd-body-text-color: #303030;
-  --cd-faded-text-color: #575757;
-
-  /* ============================================================= */
-  /* Borders
-  ================================================================ */
-  --cd-border-color: rgba(0, 0, 0, 0.125);
-  --cd-border-width: 1px;
+  --cd-border-color: #808080;
+  --cd-border-width: 2px;
   --cd-border-style: solid;
-  --cd-border-radius: 1rem;
+  --cd-border-radius: 0;
 
-  /* ============================================================= */
-  /* Navbar
-  ================================================================ */
-  --cd-navbar-background-color: #222222;
-  --cd-navbar-brand-color: var(--cd-primary-color);
-  --cd-navbar-brand-color-hover: var(--cd-secondary-color);
-  --cd-navbar-text-color: var(--cd-content-background-color);
-  --cd-navbar-link-color: var(--cd-navbar-text-color);
-  --cd-navbar-link-color-hover: var(--cd-primary-color);
-  --cd-navbar-font-family: var(--cd-header-font-family);
+  /* Windows 2000 Blue Title Bar */
+  --cd-primary-color: #000080;
+  --cd-primary-text-color: #ffffff;
 
-  /* ============================================================= */
-  /* Main Fonts
-  ================================================================ */
-  --cd-body-font-family: 'Montserrat', sans-serif;
-  --cd-header-font-family: 'Comfortaa', sans-serif;
+  /* Hover Blue */
+  --cd-secondary-color: #3a6ea5;
+  --cd-secondary-text-color: #ffffff;
+
+  /* Navbar */
+  --cd-navbar-background-color: #000080;
+  --cd-navbar-brand-color: #ffffff;
+  --cd-navbar-brand-color-hover: #c0c0c0;
+  --cd-navbar-text-color: #ffffff;
+  --cd-navbar-link-color: #ffffff;
+  --cd-navbar-link-color-hover: #c0c0c0;
+
+  /* Fonts */
+  --cd-body-font-family: "Tahoma", sans-serif;
+  --cd-header-font-family: "Tahoma", sans-serif;
+
+  /* Cards */
+  --cd-card-background-color: #d4d0c8;
+  --cd-card-header-background-color: #000080;
+  --cd-card-border-color: #808080;
+
+  .btn,
+.window-button,
+button,
+.dropdown-item {
+  background: #d4d0c8 !important;
+  border: 2px solid #808080 !important;
+  color: #000 !important;
+  box-shadow:
+    inset -1px -1px 0 #ffffff,
+    inset 1px 1px 0 #404040;
+}
+
+.btn:active,
+button:active,
+.dropdown-item:active {
+  box-shadow:
+    inset 1px 1px 0 #ffffff,
+    inset -1px -1px 0 #404040;
+}
+
+
+  /* Inputs */
+  --cd-input-background-color: #ffffff;
+  --cd-input-text-color: #000000;
+  --cd-input-border-color: #808080;
+  --cd-input-border-color-hover: #000080;
+
+  /* Links */
+  --cd-link-text-color: #0000ff;
+  --cd-link-text-color-hover: #ff0000;
+}
+
   
   /* ============================================================= */
   /* Rarities
@@ -231,7 +253,7 @@ body {
 
   /* Global Background */
   background-color: var(--cd-body-background-color);
-  background-image: var(--cd-body-background-image);
+  background-image: none;
   background-position: center;
   background-size: cover;
 
@@ -259,10 +281,13 @@ a:active {
 /* Navbar
 /* ============================================================= */
 .navbar {
-  background-color: var(--cd-navbar-background-color) !important;
-  font-family: var(--cd-navbar-font-family) !important;
-  z-index: 2000;
+  background: #000080 !important;
+  border-bottom: 2px solid #404040 !important;
+  box-shadow:
+    inset -1px -1px 0 #3a6ea5,
+    inset 1px 1px 0 #000040;
 }
+
 
 .navbar .navbar-brand {
   color: var(--cd-navbar-brand-color) !important;
@@ -426,35 +451,35 @@ a:active {
 }
 
 .dropdown-menu {
-  border-radius: var(--cd-border-radius) !important;
-  background-color: var(--cd-faded-background-color) !important;
-  color: var(--cd-body-text-color) !important;
+  background: #d4d0c8 !important;
+  border: 2px solid #808080 !important;
+  box-shadow:
+    inset -1px -1px 0 #ffffff,
+    inset 1px 1px 0 #404040;
 }
 
-.dropdown-item {
-  color: var(--cd-body-text-color) !important;
+.dropdown-item:hover {
+  background: #000080 !important;
+  color: #ffffff !important;
 }
 
-.dropdown-item:hover,
-.dropdown-item:focus,
-.dropdown-item:active,
-.dropdown-item.selected {
-  background-color: var(--cd-primary-color) !important;
-  color: var(--cd-primary-text-color) !important;
-}
 
 
 /* ============================================================= */
 /* Card
 /* ============================================================= */
 
-.card {
-  background-color: var(--cd-card-background-color) !important;
-  border-width: var(--cd-card-border-width) !important;
-  border-style: var(--cd-card-border-style) !important;
-  border-color: var(--cd-card-border-color) !important;
-  border-radius: var(--cd-border-radius) !important;
+.card,
+.cd-gallery-card,
+.cd-profile-image-container,
+.cd-prompt-background {
+  background: #d4d0c8 !important;
+  border: 2px solid #808080 !important;
+  box-shadow:
+    inset -1px -1px 0 #ffffff,
+    inset 1px 1px 0 #404040;
 }
+
 
 .card-header {
   background-color: var(--cd-card-header-background-color) !important;
@@ -510,18 +535,15 @@ a.badge.badge-primary:active {
 /* ============================================================= */
 
 .form-control {
-  background-color: var(--cd-input-background-color) !important;
-  color: var(--cd-input-text-color) !important;
-  border-width: var(--cd-input-border-width) !important;
-  border-style: var(--cd-input-border-style) !important;
-  border-color: var(--cd-input-border-color) !important;
-  border-radius: var(--cd-input-border-radius) !important;
+  background: #ffffff !important;
+  border: 2px solid #808080 !important;
+  box-shadow:
+    inset 1px 1px 0 #ffffff,
+    inset -1px -1px 0 #404040;
 }
 
-.form-control:focus,
-.form-control:active {
-  background-color: var(--cd-input-background-color) !important;
-  border-color: var(--cd-input-border-color-hover) !important;
+.form-control:focus {
+  border-color: #000080 !important;
 }
 
 
