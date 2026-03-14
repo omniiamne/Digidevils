@@ -1,29 +1,20 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const stylesheet = document.getElementById('stylesheet');
-    
+document.addEventListener("DOMContentLoaded", function () {
+    const styleLink = document.getElementById("theme-style");
+    const savedTheme = localStorage.getItem("theme") || "light";
 
+    // Применяем сохранённую тему
+    applyTheme(savedTheme);
 
-    // Function to switch stylesheet
-    function switchStylesheet() {
-        if (stylesheet.getAttribute('href') === 'styles/css/charadex.css') {
-            stylesheet.setAttribute('href', 'styles/css/windows.css');
-            localStorage.setItem('stylesheet', 'styles/css/windows.css');
-        } else {
-            stylesheet.setAttribute('href', 'styles/css/charadex.css');
-            localStorage.setItem('stylesheet', 'styles/css/charadex.css');
-        }
-    }
-
-    // Event delegation for the button
-    document.body.addEventListener('click', function(event) {
-        if (event.target.id === 'switchButton') {
-            switchStylesheet();
-        }
+    // Вешаем обработчики на кнопки выбора темы
+    document.querySelectorAll("[data-theme]").forEach(btn => {
+        btn.addEventListener("click", () => {
+            const theme = btn.getAttribute("data-theme");
+            applyTheme(theme);
+            localStorage.setItem("theme", theme);
+        });
     });
 
-    // Check localStorage for saved preference
-    const savedStylesheet = localStorage.getItem('stylesheet');
-    if (savedStylesheet) {
-        stylesheet.setAttribute('href', savedStylesheet);
+    function applyTheme(theme) {
+        styleLink.href = `/styles/css/${theme}.css`;
     }
 });
