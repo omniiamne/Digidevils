@@ -1,8 +1,15 @@
-<nav class="nav navbar navbar-expand-md py-4" id="header">
+<nav class="header-banner"></nav>
+<nav class="nav navbar navbar-expand-md py-0" id="header">
   <div class="container">
 
     <!-- Brand -->
     <a class="navbar-brand" href="index.html"><i class="fas fa-floppy-disk fa-fw"></i> Charadex</a>
+    <div class="lang-switcher" style="margin-left: auto; display: flex; gap: 8px;">
+  <button data-lang="en">EN</button>
+  <button data-lang="ru">RU</button>
+</div>
+
+
 
     <!-- Toggle -->
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#charadexnav">
@@ -14,8 +21,7 @@
       <ul class="navbar-nav ml-auto">
 
 
-        <a class="nav-link" href="#">News</a>
-
+        <a class="nav-link" href="#">News</a>        
 
         <li class="nav-item dropdown">
           <a class="nav-link" href="#" data-toggle="dropdown"> Explore <i class="fas fa-chevron-down nav-link-icon fa-fw"></i></a>
@@ -43,12 +49,20 @@
 
         <li class="nav-item dropdown">
           <a class="nav-link" href="#" data-toggle="dropdown">Help <i class="fas fa-chevron-down nav-link-icon fa-fw"></i></a>
-          <div class="dropdown-menu dropdown-menu-right">
+          <div class="dropdown-menu dropdown-menu-right">            
             <a class="dropdown-item" href="staff.html">Staff</a>
             <a class="dropdown-item" href="terms.html">TOS</a>
             <a class="dropdown-item" href="faq.html">FAQ</a>
             <div class="dropdown-divider"></div>
             <a class="dropdown-item" href="">Help Desk</a>
+          </div>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link" href="#" data-toggle="dropdown"> <i class="fa-solid fa-language"></i> <i class="fas fa-chevron-down nav-link-icon fa-fw"></i></a>
+          <div class="dropdown-menu dropdown-menu-right">
+            <a class="dropdown-item" href=""><button data-lang="en">EN</button></a
+            <a class="dropdown-item" href=""><button data-lang="ru">RU</button></a
           </div>
         </li>
 
