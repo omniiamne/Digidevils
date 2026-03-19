@@ -345,7 +345,7 @@ a:active {
 /* ============================================================= */
 
 .footer {
-  background-color: var(--cd-footer-background-color) !important;
+  background-color: var(transparent) !important;
   color: var(--cd-footer-text-color) !important;
 }
 
