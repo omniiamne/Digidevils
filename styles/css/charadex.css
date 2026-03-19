@@ -790,6 +790,8 @@ main {
   backdrop-filter: blur(10px); 
   box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 6px 3px; 
   display: flex; flex-direction: column; 
+  width: 800px;
+  margin: 0 auto;
 }
 
 .sidebar ul { 
@@ -807,7 +809,7 @@ main {
   box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 6px 3px; 
 }
 
-.sidebar-header a { 
+.sidebar-header { 
   color: var(--cd-navbar-background-color); 
 }
 
@@ -818,3 +820,9 @@ main {
   background-color: transparent; 
   color: rgba(255, 255, 255, 0.8); 
 }
+
+header {
+  width: 800px;
+  margin: 0 auto;
+}
+
