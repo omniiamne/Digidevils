@@ -792,10 +792,9 @@ main {
     background-image: url("https://img-l.ink/img/1LVeMb9kzqCRnpFHcuK9mCJuNCrBfQoT0.png");
     background-position: center;
     background-size: cover;
-    width: 600px;
 }
 
-.header {
+header {
     width: 600px;
 }
 
@@ -804,7 +803,7 @@ main {
   backdrop-filter: blur(10px); 
   box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 6px 3px; 
   display: flex; flex-direction: column; 
-  width: 600px;
+  width: 100px;
   margin: 0 auto;
   margin-left: 0;
 }
