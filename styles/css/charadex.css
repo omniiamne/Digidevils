@@ -781,9 +781,12 @@ p:last-child {
   /*
   /* ============================================================= */
 
-.header,
-.main-content {
-  flex: 1; /* оба занимают одинаковую ширину */
+.header-banner {
+    height: 250px;
+    border-radius: 0 0 0 0;
+    background-image: url("https://img-l.ink/img/1LVeMb9kzqCRnpFHcuK9mCJuNCrBfQoT0.png");
+    background-position: center;
+    background-size: cover;
 }
 
 .main {
@@ -833,4 +836,20 @@ p:last-child {
 
 .footer {
   margin-top: 10px;
+}
+
+#charadex-gallery .list .card-body {
+  min-height: calc(200px + 2.5rem);
+}
+
+#charadex-gallery .list .card-body img {
+  max-height: 200px;
+}
+
+.cd-gallery-card {
+  min-height: calc(175px + 2.5rem);
+}
+
+.cd-gallery-card > img {
+  max-height: 175px !important;
 }
