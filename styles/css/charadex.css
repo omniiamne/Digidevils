@@ -784,7 +784,6 @@ p:last-child {
 
 main {
   margin-top: 10px;
-  width: 70%;
 }
 
 .header-banner {
@@ -796,7 +795,7 @@ main {
 }
 
 navbar {
-    width: 600px;
+    width: 800px;
 }
 
 .main-content { 
