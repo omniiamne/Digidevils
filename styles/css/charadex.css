@@ -786,7 +786,7 @@ p:last-child {
   flex: 1; /* оба занимают одинаковую ширину */
 }
 
-main {
+.main {
   margin-top: 10px;
 }
 
@@ -831,3 +831,6 @@ main {
   color: rgba(255, 255, 255, 0.8); 
 }
 
+.footer {
+  margin-top: 10px;
+}
