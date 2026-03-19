@@ -799,7 +799,7 @@ main {
   backdrop-filter: blur(10px); 
   box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 6px 3px; 
   display: flex; flex-direction: column; 
-  width: 800px;
+  width: 600px;
   margin: 0 auto;
   margin-left: 0;
 }
