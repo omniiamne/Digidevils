@@ -792,6 +792,11 @@ main {
   display: flex; flex-direction: column; 
   width: 800px;
   margin: 0 auto;
+  margin-left: 0;
+}
+
+.sidebar {
+  margin-right: 0;
 }
 
 .sidebar ul { 
