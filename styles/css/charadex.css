@@ -792,6 +792,11 @@ main {
     background-image: url("https://img-l.ink/img/1LVeMb9kzqCRnpFHcuK9mCJuNCrBfQoT0.png");
     background-position: center;
     background-size: cover;
+    width: 600px;
+}
+
+.header {
+    width: 600px;
 }
 
 .main-content { 
