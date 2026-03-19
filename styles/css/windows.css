@@ -781,60 +781,22 @@ p:last-child {
   /*
   /* ============================================================= */
 
-  /* ============================================================= */
-  /* Windows 2000 Card Style                                       */
-  /* ============================================================= */
+  .main-content {
+  background: #C0C0C0; /* классический серый фон Win98 */
+  padding: 12px;
 
-.card {
-  background: #d4d0c8 !important;
-  border: 2px solid #808080 !important;
-  border-radius: 0 !important;
+  /* 3D‑рамка окна */
+  border-top: 2px solid #FFFFFF;
+  border-left: 2px solid #FFFFFF;
+  border-bottom: 2px solid #808080;
+  border-right: 2px solid #808080;
+
+  /* Внутренняя рамка */
   box-shadow:
-    inset -1px -1px 0 #ffffff,
-    inset 1px 1px 0 #404040;
-  padding: 0 !important;
-}
-
-/* Header — синяя полоска как в Windows 2000 */
-.card-header {
-  background: linear-gradient(to bottom, #3a6ea5, #000080) !important;
-  color: #ffffff !important;
-  font-family: "Tahoma", sans-serif !important;
-  font-weight: bold;
-  padding: 4px 8px !important;
-  border-bottom: 2px solid #404040 !important;
-  border-radius: 0 !important;
-}
-
-/* Тело карточки */
-.card-body {
-  background: #d4d0c8 !important;
-  padding: 10px !important;
-  font-family: "Tahoma", sans-serif !important;
-  color: #000 !important;
-}
-
-/* Footer — как нижняя панель окна */
-.card-footer {
-  background: #d4d0c8 !important;
-  border-top: 2px solid #808080 !important;
-  padding: 6px 8px !important;
-  font-family: "Tahoma", sans-serif !important;
-  border-radius: 0 !important;
-}
-
-/* Кнопки внутри карточки */
-.card .btn {
-  background: #d4d0c8 !important;
-  border: 2px solid #808080 !important;
-  color: #000 !important;
-  box-shadow:
-    inset -1px -1px 0 #ffffff,
-    inset 1px 1px 0 #404040;
-}
-
-.card .btn:active {
-  box-shadow:
-    inset 1px 1px 0 #ffffff,
+    inset 1px 1px 0 #DFDFDF,
     inset -1px -1px 0 #404040;
+
+  /* Немного пространства */
+  margin: 10px auto;
+  width: fit-content;
 }
