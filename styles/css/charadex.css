@@ -781,12 +781,10 @@ p:last-child {
   /*
   /* ============================================================= */
 
-.main-content {
-  background: rgba(255, 255, 255, 0.4); /* полупрозрачный фон */
-  backdrop-filter: blur(6px);           /* блюр заднего фона */
-  -webkit-backdrop-filter: blur(6px);   /* для Safari */
-  
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  border-radius: 6px;
+.main-content { 
+  background-color: rgba(255, 255, 255, 0.5); 
+  backdrop-filter: blur(10px); 
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 6px 3px; 
+  display: flex; flex-direction: column; 
 }
 
