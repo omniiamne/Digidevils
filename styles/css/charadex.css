@@ -32,7 +32,7 @@ body {
   --cd-faded-background-color: #f8f8f8;
 
   /* Background Extras */
-  --cd-body-background-image: url();
+  --cd-body-background-image: url(https://i.pinimg.com/1200x/83/b1/ca/83b1cad4447730232906026bb2e53a04.jpg);
 
   /* ============================================================= */
   /* Text
@@ -786,7 +786,6 @@ p:last-child {
   backdrop-filter: blur(6px);           /* блюр заднего фона */
   -webkit-backdrop-filter: blur(6px);   /* для Safari */
   
-  /* Рекомендую добавить */
   border: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: 6px;
 }
