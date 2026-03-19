@@ -781,6 +781,11 @@ p:last-child {
   /*
   /* ============================================================= */
 
+.navbar,
+.main-content {
+  flex: 1; /* оба занимают одинаковую ширину */
+}
+
 main {
   margin-top: 10px;
 }
@@ -824,10 +829,5 @@ main {
 .sidebar-header a:hover { 
   background-color: transparent; 
   color: rgba(255, 255, 255, 0.8); 
-}
-
-.navbar {
-  width: 800px;
-  margin: 0 auto;
 }
 
