@@ -804,6 +804,10 @@ p:last-child {
 }
 
 .sidebar-header a { 
+  color: var(--cd-navbar-background-color); 
+}
+
+.sidebar-header a { 
   color: white; 
 }
 .sidebar-header a:hover { 
