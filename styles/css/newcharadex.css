@@ -797,6 +797,10 @@ navbar {
   display: flex; flex-direction: column;   
   margin: 0 auto;
   margin-left: 0;
+  border-width: var(--cd-card-border-width) !important;
+  border-style: var(--cd-card-border-style) !important;
+  border-color: var(--cd-card-border-color) !important;
+  border-radius: var(--cd-border-radius) !important;
 }
 
 .sidebar {
