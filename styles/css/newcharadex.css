@@ -27,12 +27,12 @@ body {
   /* ============================================================= */
   /* Backgrounds
   ================================================================ */
-  --cd-body-background-color: #f8f8f8;
+  --cd-body-background-color: #d2d2d2;
   --cd-content-background-color: #ffffff;
   --cd-faded-background-color: #f8f8f8;
 
   /* Background Extras */
-  --cd-body-background-image: url(https://i.pinimg.com/1200x/83/b1/ca/83b1cad4447730232906026bb2e53a04.jpg);
+  --cd-body-background-image: url();
 
   /* ============================================================= */
   /* Text
@@ -116,9 +116,9 @@ body {
   --cd-footer-background-color: var(--cd-navbar-background-color);
 
   /* Link/Text */
-  --cd-footer-text-color: var(--cd-navbar-text-color);
-  --cd-footer-link-color: var(--cd-navbar-link-color);
-  --cd-footer-link-color-hover: var(--cd-navbar-link-color-hover);
+  --cd-footer-text-color: var(--cd-navbar-background-color);
+  --cd-footer-link-color: var(--cd-navbar-background-color);
+  --cd-footer-link-color-hover: var(--cd-navbar-background-color);
 
 
   /* ============================================================= */
@@ -233,7 +233,8 @@ body {
   background-color: var(--cd-body-background-color);
   background-image: var(--cd-body-background-image);
   background-position: center;
-  background-size: cover;
+  background-repeat: repeat;
+  background-attachment:fixed;
 
 }
 
@@ -344,7 +345,7 @@ a:active {
 /* ============================================================= */
 
 .footer {
-  background-color: var(--cd-footer-background-color) !important;
+  background-color: var(transparent) !important;
   color: var(--cd-footer-text-color) !important;
 }
 
@@ -775,28 +776,76 @@ p:last-child {
   color: var(--cd-rarity-legendary-txt);
 }
 
-  /* ============================================================= */
+/* ============================================================= */
   /*
   /* Кастомки
   /*
   /* ============================================================= */
 
-  .main-content {
-  background: #C0C0C0; /* классический серый фон Win98 */
-  padding: 12px;
+main {
+  margin-top: 10px;
+}
 
-  /* 3D‑рамка окна */
-  border-top: 2px solid #FFFFFF;
-  border-left: 2px solid #FFFFFF;
-  border-bottom: 2px solid #808080;
-  border-right: 2px solid #808080;
+navbar {
+    width: 800px;
+}
 
-  /* Внутренняя рамка */
-  box-shadow:
-    inset 1px 1px 0 #DFDFDF,
-    inset -1px -1px 0 #404040;
+.main-content { 
+  background-color: rgba(255, 255, 255, 0.5); 
+  backdrop-filter: blur(10px); 
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 6px 3px; 
+  display: flex; flex-direction: column;   
+  margin: 0 auto;
+  margin-left: 0;
+}
 
-  /* Немного пространства */
-  margin: 10px auto;
-  width: fit-content;
+.sidebar {
+  margin-right: 0;
+}
+
+.sidebar ul { 
+  list-style-type: none; 
+  display: inline-block; 
+  padding-top: 30px; 
+}
+
+.sidebar ul li { 
+  background-color: rgba(255, 255, 255, 0.5); 
+  backdrop-filter: blur(10px); 
+  border-top-left-radius: 0.25rem; 
+  border-bottom-left-radius: 0.25rem; 
+  margin-bottom: 1em; padding: 0.4em 0px; 
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 6px 3px; 
+}
+
+.sidebar-header { 
+  color: var(--cd-navbar-background-color); 
+}
+
+.sidebar-header a { 
+  color: white; 
+}
+.sidebar-header a:hover { 
+  background-color: transparent; 
+  color: rgba(255, 255, 255, 0.8); 
+}
+
+.footer {
+  margin-top: 10px;
+}
+
+#charadex-gallery .list .card-body {
+  min-height: calc(200px + 2.5rem);
+}
+
+#charadex-gallery .list .card-body img {
+  max-height: 200px;
+}
+
+.cd-gallery-card {
+  min-height: calc(175px + 2.5rem);
+}
+
+.cd-gallery-card > img {
+  max-height: 175px !important;
 }
