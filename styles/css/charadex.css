@@ -791,12 +791,14 @@ navbar {
 }
 
 .main-content { 
-  background-color: rgba(255, 255, 255, 0.5); 
-  backdrop-filter: blur(10px); 
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 6px 3px; 
   display: flex; flex-direction: column;   
   margin: 0 auto;
   margin-left: 0;
+  background-color: var(--cd-card-background-color) !important;
+  border-width: var(--cd-card-border-width) !important;
+  border-style: var(--cd-card-border-style) !important;
+  border-color: var(--cd-card-border-color) !important;
+  border-radius: var(--cd-border-radius) !important;
 }
 
 .sidebar {
@@ -850,12 +852,6 @@ navbar {
   max-height: 175px !important;
 }
 
-main {
-  background-color: var(--cd-card-background-color) !important;
-  border-width: var(--cd-card-border-width) !important;
-  border-style: var(--cd-card-border-style) !important;
-  border-color: var(--cd-card-border-color) !important;
-  border-radius: var(--cd-border-radius) !important;
-}
+
 }
 
