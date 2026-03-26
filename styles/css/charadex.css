@@ -850,12 +850,12 @@ navbar {
   max-height: 175px !important;
 }
 
-main,
-.card {
-  /* общие стили карточки */
-  background: var(--card-bg, #fff);
-  border: 1px solid var(--card-border, #000);
-  padding: 8px;
-  box-shadow: 2px 2px 0 #000;
+main {
+  background-color: var(--cd-card-background-color) !important;
+  border-width: var(--cd-card-border-width) !important;
+  border-style: var(--cd-card-border-style) !important;
+  border-color: var(--cd-card-border-color) !important;
+  border-radius: var(--cd-border-radius) !important;
+}
 }
 
