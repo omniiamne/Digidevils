@@ -228,6 +228,61 @@
 		  </div>
 
 
+		<!-- RIGHT PART
+        <!-- ----------------------------------------------------------- -->
+
+
+		<div class="card-header">
+            <ul class="nav nav-tabs card-header-tabs">
+                <li class="nav-item"><a class="nav-link active" id="infoTab-4" data-toggle="tab" href="#profile" role="tab" aria-selected="true">Profile</a></li>
+                <li class="nav-item"><a class="nav-link" id="creditsTab-4" data-toggle="tab" href="#ownership" role="tab" aria-selected="false">Ownership</a></li>
+                <li class="nav-item"><a class="nav-link" id="mentionTab-4" data-toggle="tab" href="#notes" role="tab" aria-selected="false">Notes & Logs</a></li>
+            </ul>
+        </div>
+
+		<div class="card-body tab-content">			
+			<div class="tab-pane fade active show" id="profile">
+				
+                <div class="row no-gutters">
+                    <div class="col-lg-4 col-md-6 col-4"><h5>Home</h5></div>
+                    <div class="col-lg-8 col-7 pl-1">None</div>
+                </div>
+
+                <div class="row no-gutters">
+                    <div class="col-lg-4 col-md-6 col-4"><h5>Faction</h5></div>
+                    <div class="col-lg-8 col-7 pl-1">None</div>
+                </div>
+				
+				<hr>
+				
+				<div class="row no-gutters">
+                    <div class="col-lg-4 col-md-6 col-4"><h5>Species</h5></div>
+                    <div class="col-lg-8 col-7 pl-1"><span class="species"></span></div>
+                </div>
+                
+				<div class="row no-gutters">
+                    <div class="col-lg-4 col-5"><h5>Subtype</h5></div>
+                    <div class="col-lg-8 col-7 pl-1"><span class="subtype"></span></div>
+                </div>
+                                                                
+                                                                
+                <div class="row no-gutters">
+                    <div class="col-lg-4 col-5"><h5>Rarity</h5></div>
+                    <div class="col-lg-8 col-7 pl-1"><span class="rarity"></span></div>
+                </div>
+                                        
+                <div data-toggle="collapse" data-target="#traits" id="traits-toggle" aria-expanded="false" class="collapsed">
+                    <h5>Traits <i class="fas fa-angle-down"></i></h5>
+                </div>
+
+                	<div class="collapse" id="traits" style="">
+                        <div class="px-4 cd-text-pre traits cd-traits-scroll"></div>
+                    </div>
+				
+                    <hr>
+			</div>
+		</div>
+
         <!-- Nav Tabs
         <!-- ----------------------------------------------------------- -->
         <hr class="my-0">
