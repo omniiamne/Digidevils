@@ -472,7 +472,7 @@ a:active {
   border-bottom-width: var(--cd-card-border-width) !important;
   border-bottom-style: var(--cd-card-border-style) !important;
   font-family: var(--cd-card-header-font-family) !important;
-  border-radius: calc(var(--cd-border-radius) - 1px) calc(var(--cd-border-radius) - 1px) 0 0 !important;
+  border-radius: 0 0 calc(var(--cd-border-radius) - 1px) calc(var(--cd-border-radius) - 1px) !important;
 }
 
 .card-footer {
