@@ -31,3 +31,16 @@ function initLanguage() {
     });
   });
 }
+// wait header to load
+
+function waitForHeader() {
+  if (!document.querySelector("[data-i18n]")) {
+    setTimeout(waitForHeader, 100);
+    return;
+  }
+  initLanguage();
+}
+
+document.addEventListener("includesLoaded", () => {
+  initLanguage();
+});
