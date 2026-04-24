@@ -1,20 +1,4 @@
-// ===============================
-//  TRANSLATIONS
-// ===============================
-
-const translations = {
-  en: {
-    "nav-staff": "Staff",
-   "nav-news": "News" },
-  ru: {
-    "nav-staff": "Команда",
-   "nav-news": "Новости" }
-};
-
-
-// ===============================
-//  APPLY LANGUAGE
-// ===============================
+// apply language
 
 function applyLanguage(lang) {
   document.querySelectorAll("[data-i18n]").forEach(el => {
@@ -48,7 +32,8 @@ function initLanguage() {
   });
 }
 
-// ждём, пока header загрузится через loadIncludes.js
+// wait header to load
+
 function waitForHeader() {
   if (!document.querySelector("[data-i18n]")) {
     setTimeout(waitForHeader, 100);
