@@ -1,15 +1,16 @@
 
-function drawLine(tree, parent, child, containerRect) {
+function drawLine(tree, parent, child) {
+  const treeRect = tree.getBoundingClientRect();
   const p = parent.getBoundingClientRect();
   const c = child.getBoundingClientRect();
 
-  const x1 = p.left + p.width / 2 - containerRect.left;
-  const y1 = p.bottom - containerRect.top;
+  const x1 = p.left + p.width / 2 - treeRect.left;
+  const y1 = p.bottom - treeRect.top;
 
-  const x2 = c.left + c.width / 2 - containerRect.left;
-  const y2 = c.top - containerRect.top;
+  const x2 = c.left + c.width / 2 - treeRect.left;
+  const y2 = c.top - treeRect.top;
 
-  // Горизонтальная линия
+  // Horizontal line
   const h = document.createElement("div");
   h.className = "line";
   h.style.top = y1 + "px";
@@ -17,7 +18,7 @@ function drawLine(tree, parent, child, containerRect) {
   h.style.width = Math.abs(x2 - x1) + "px";
   h.style.height = "2px";
 
-  // Вертикальная линия
+  // Vertical line
   const v = document.createElement("div");
   v.className = "line";
   v.style.left = x2 + "px";
@@ -31,25 +32,22 @@ function drawLine(tree, parent, child, containerRect) {
 
 function buildTree() {
   const tree = document.querySelector(".tree");
-  const containerRect = tree.getBoundingClientRect();
-
   const nodes = [...tree.querySelectorAll(".node")];
+
   const map = new Map(nodes.map(n => [n.dataset.id, n]));
+
+  // Remove old lines
+  tree.querySelectorAll(".line").forEach(l => l.remove());
 
   nodes.forEach(child => {
     if (!child.dataset.parent) return;
 
-    const parents = child.dataset.parent.split(",");
-    parents.forEach(pid => {
+    child.dataset.parent.split(",").forEach(pid => {
       const parent = map.get(pid.trim());
-      if (parent) drawLine(tree, parent, child, containerRect);
+      if (parent) drawLine(tree, parent, child);
     });
   });
 }
 
 window.addEventListener("load", buildTree);
-window.addEventListener("resize", () => {
-  document.querySelectorAll(".line").forEach(l => l.remove());
-  buildTree();
-});
-</script>
+window.addEventListener("resize", buildTree);
