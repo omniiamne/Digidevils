@@ -880,10 +880,11 @@ navbar {
   .node {
     width: 150px;
     position: relative;
+    z-index: 2;
   }
 
   .line {
     position: absolute;
     background: #0d6efd;
-    z-index: 0;
+    z-index: 1;
   }
