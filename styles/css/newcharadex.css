@@ -898,7 +898,7 @@ navbar {
     overflow-x: auto;
     overflow-y: visible;
     width: 100%;
-    padding: 20px 0;
+    padding: 50px 0;
     display: flex;
     justify-content: center;
 }
