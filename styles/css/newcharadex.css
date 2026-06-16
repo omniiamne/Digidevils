@@ -863,28 +863,34 @@ navbar {
   max-height: 175px !important;
 }
 
+/* ============================================================= */
+  /*
+  /* деревья
+  /*
+  /* ============================================================= */
+
 .tree {
-    margin: 60px auto;
-    width: 1000px;
-    position: relative;
-  }
+  position: relative;
+  width: 1000px;
+  margin: 60px auto;
+}
 
-  .level {
-    display: flex;
-    justify-content: center;
-    gap: 120px;
-    margin-bottom: 140px;
-    position: relative;
-  }
+.level {
+  display: flex;
+  justify-content: center;
+  gap: 120px;
+  margin-bottom: 140px;
+}
 
-  .node {
-    width: 150px;
-    position: relative;
-    z-index: 2;
-  }
+.node {
+  width: 150px;
+  position: relative;
+  z-index: 2;
+}
 
-  .line {
-    position: absolute;
-    background: #0d6efd;
-    z-index: 1;
-  }
+.line {
+  position: absolute;
+  background: #0d6efd;
+  z-index: 1;
+}
+
