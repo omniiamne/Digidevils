@@ -873,6 +873,7 @@ navbar {
   position: relative;
   width: 1000px;
   margin: 60px auto;
+  min-width: max-content;
 }
 
 .level {
@@ -896,7 +897,9 @@ navbar {
 
 .tree-wrapper {
     overflow-x: auto;
-    overflow-y: auto;
+    overflow-y: visible;
     width: 100%;
-    padding-bottom: 20px; /* чтобы линии не обрезались */
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
 }
