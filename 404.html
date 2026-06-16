@@ -101,34 +101,58 @@
 
   <!-- Уровень 1 -->
   <div class="level">
-    <div class="node"><div class="card h-100"><div class="card-body text-center">1</div></div></div>
+    <div class="node" data-id="1">
+      <div class="card h-100"><div class="card-body text-center">1</div></div>
+    </div>
   </div>
 
   <!-- Уровень 2 -->
   <div class="level">
-    <div class="node"><div class="card h-100"><div class="card-body text-center">2.1</div></div></div>
-    <div class="node"><div class="card h-100"><div class="card-body text-center">2.2</div></div></div>
-    <div class="node"><div class="card h-100"><div class="card-body text-center">2.3</div></div></div>
+    <div class="node" data-id="21" data-parent="1">
+      <div class="card h-100"><div class="card-body text-center">2.1</div></div>
+    </div>
+    <div class="node" data-id="22" data-parent="1">
+      <div class="card h-100"><div class="card-body text-center">2.2</div></div>
+    </div>
+    <div class="node" data-id="23" data-parent="1">
+      <div class="card h-100"><div class="card-body text-center">2.3</div></div>
+    </div>
   </div>
 
   <!-- Уровень 3 -->
   <div class="level">
-    <div class="node"><div class="card h-100"><div class="card-body text-center">3.1</div></div></div>
-    <div class="node"><div class="card h-100"><div class="card-body text-center">3.2</div></div></div>
-    <div class="node"><div class="card h-100"><div class="card-body text-center">3.3</div></div></div>
-    <div class="node"><div class="card h-100"><div class="card-body text-center">3.4</div></div></div>
+    <div class="node" data-id="31" data-parent="21">
+      <div class="card h-100"><div class="card-body text-center">3.1</div></div>
+    </div>
+    <div class="node" data-id="32" data-parent="22">
+      <div class="card h-100"><div class="card-body text-center">3.2</div></div>
+    </div>
+    <div class="node" data-id="33" data-parent="22">
+      <div class="card h-100"><div class="card-body text-center">3.3</div></div>
+    </div>
+    <div class="node" data-id="34" data-parent="23">
+      <div class="card h-100"><div class="card-body text-center">3.4</div></div>
+    </div>
   </div>
 
   <!-- Уровень 4 -->
   <div class="level">
-    <div class="node"><div class="card h-100"><div class="card-body text-center">4.1</div></div></div>
-    <div class="node"><div class="card h-100"><div class="card-body text-center">4.2</div></div></div>
-    <div class="node"><div class="card h-100"><div class="card-body text-center">4.3</div></div></div>
+    <div class="node" data-id="41" data-parent="31">
+      <div class="card h-100"><div class="card-body text-center">4.1</div></div>
+    </div>
+    <div class="node" data-id="42" data-parent="33">
+      <div class="card h-100"><div class="card-body text-center">4.2</div></div>
+    </div>
+    <div class="node" data-id="43" data-parent="34">
+      <div class="card h-100"><div class="card-body text-center">4.3</div></div>
+    </div>
   </div>
 
   <!-- Уровень 5 -->
   <div class="level">
-    <div class="node"><div class="card h-100"><div class="card-body text-center">5</div></div></div>
+    <div class="node" data-id="5" data-parent="42">
+      <div class="card h-100"><div class="card-body text-center">5</div></div>
+    </div>
   </div>
 
 </div>
