@@ -1,4 +1,5 @@
-function connectNodes(tree, parent, child, containerRect) {
+
+function drawLine(tree, parent, child, containerRect) {
   const p = parent.getBoundingClientRect();
   const c = child.getBoundingClientRect();
 
@@ -28,24 +29,27 @@ function connectNodes(tree, parent, child, containerRect) {
   tree.appendChild(v);
 }
 
-function connectLevels(tree) {
-  const levels = Array.from(tree.querySelectorAll(".level"));
+function buildTree() {
+  const tree = document.querySelector(".tree");
   const containerRect = tree.getBoundingClientRect();
 
-  for (let i = 0; i < levels.length - 1; i++) {
-    const parents = levels[i].querySelectorAll(".node");
-    const children = levels[i + 1].querySelectorAll(".node");
+  const nodes = [...tree.querySelectorAll(".node")];
+  const map = new Map(nodes.map(n => [n.dataset.id, n]));
 
-    // здесь логика: каждый родитель соединён со всеми детьми следующего уровня
-    parents.forEach(parent => {
-      children.forEach(child => {
-        connectNodes(tree, parent, child, containerRect);
-      });
+  nodes.forEach(child => {
+    if (!child.dataset.parent) return;
+
+    const parents = child.dataset.parent.split(",");
+    parents.forEach(pid => {
+      const parent = map.get(pid.trim());
+      if (parent) drawLine(tree, parent, child, containerRect);
     });
-  }
+  });
 }
 
-window.addEventListener("load", () => {
-  const tree = document.querySelector(".tree");
-  connectLevels(tree);
+window.addEventListener("load", buildTree);
+window.addEventListener("resize", () => {
+  document.querySelectorAll(".line").forEach(l => l.remove());
+  buildTree();
 });
+</script>
