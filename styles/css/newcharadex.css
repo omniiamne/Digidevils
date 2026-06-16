@@ -883,7 +883,7 @@ navbar {
 }
 
 .node {
-  width: 150px;
+  width: 300px;
   position: relative;
   z-index: 2;
 }
