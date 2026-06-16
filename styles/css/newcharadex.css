@@ -862,3 +862,28 @@ navbar {
 .cd-gallery-card > img {
   max-height: 175px !important;
 }
+
+.tree {
+    margin: 60px auto;
+    width: 1000px;
+    position: relative;
+  }
+
+  .level {
+    display: flex;
+    justify-content: center;
+    gap: 120px;
+    margin-bottom: 140px;
+    position: relative;
+  }
+
+  .node {
+    width: 150px;
+    position: relative;
+  }
+
+  .line {
+    position: absolute;
+    background: #0d6efd;
+    z-index: 0;
+  }
