@@ -871,8 +871,8 @@ navbar {
 
 .tree {
   position: relative;
-  margin: 60px auto;
-  min-width: max-content;
+    width: max-content; /* ← ключевой момент */
+    padding-left: 80px;
 }
 
 .level {
